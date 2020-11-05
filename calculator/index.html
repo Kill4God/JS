@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<script src="main.js"></script>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="textInOutArea">
+            <input class="textInOut" type="text" readonly autofocus size="20">
+        </div>
+    </div>
+    <div class="buttonArea">
+        <table class="buttonTable">
+            <tr class="buttonRow">
+                <td><button type="button" onfocus="changeFocus(this)" value="(" class="calcButton" onclick="checkSymbol(this)">(</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value=")" class="calcButton" onclick="checkSymbol(this)">)</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="Clear" class="calcButtonClear" onclick="clearSymbols()">CE</button></td>
+                <td><button type="button" onfocus="changeFocus(this)"value="Delete" class="calcButtonDelete" onclick="deleteSymbol()">C</button></td>
+            </tr>
+            <tr class="buttonRow">
+                <td><button type="button" onfocus="changeFocus(this)" value="7" class="calcButton" onclick="checkSymbol(this)">7</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="8" class="calcButton" onclick="checkSymbol(this)">8</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="9" class="calcButton" onclick="checkSymbol(this)">9</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="+" class="calcButton" onclick="checkSymbol(this)">+</button></td>
+            </tr>
+            <tr class="buttonRow">
+                <td><button type="button" onfocus="changeFocus(this)" value="4" class="calcButton" onclick="checkSymbol(this)">4</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="5" class="calcButton" onclick="checkSymbol(this)">5</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="6" class="calcButton" onclick="checkSymbol(this)">6</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="-" class="calcButton" onclick="checkSymbol(this)">-</button></td>
+            </tr>
+            <tr class="buttonRow">
+                <td><button type="button" onfocus="changeFocus(this)" value="1" class="calcButton" onclick="checkSymbol(this)">1</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="2" class="calcButton" onclick="checkSymbol(this)">2</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="3" class="calcButton" onclick="checkSymbol(this)">3</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="/" class="calcButton" onclick="checkSymbol(this)">/</button></td>
+            </tr>
+            <tr class="buttonRow">
+                <td><button type="button" onfocus="changeFocus(this)" value="0" class="calcButton" onclick="checkSymbol(this)">0</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="." class="calcButton" onclick="checkSymbol(this)">.</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="*" class="calcButton" onclick="checkSymbol(this)">*</button></td>
+                <td><button type="button" onfocus="changeFocus(this)" value="=" class="calcButton" onclick="resultOut()">=</button></td>
+            </tr>
+        </table>
+    </div>  
+</body>
